@@ -1,0 +1,44 @@
+package com.esisa.dp.creationa.builder;
+
+import java.util.List;
+
+public class ConcreteBuilder1 implements Builder{
+	/*
+	 * Construire une list de Design Patterns
+	 * avec une recherche par mot clé dans l'intent
+	 * */
+	
+	private List<DesingPattern> result;
+	public ConcreteBuilder1() {
+		
+	}
+	
+	public List<DesingPattern> getResult() {
+		return result;
+	}
+
+	@Override
+	public void init() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setRow(String[] data) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void filter(String keyword) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void constract() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

@@ -1,0 +1,12 @@
+package com.esisa.dp.creationa.builder;
+
+public class DesingPattern {
+	private int id;
+	private String name;
+	private String category;
+	private String intent;
+	
+	public DesingPattern() {
+		// TODO Auto-generated constructor stub
+	}
+}

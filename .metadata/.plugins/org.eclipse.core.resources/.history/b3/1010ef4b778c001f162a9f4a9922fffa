@@ -1,0 +1,11 @@
+package com.esisa.dp.creationa.builder;
+
+public interface Builder {
+	//methhode pour avancer le processus , il ne retourne rien ces methodes
+	public void init();
+	public void setRow(String...id row);
+	public void filter(String keyword);
+	public void constract();
+	
+	public Object getResult();
+}

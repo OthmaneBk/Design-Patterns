@@ -1,0 +1,95 @@
+package com.esisa.dp.creational.abstract_factory;
+
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.BoxLayout;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
+import javax.swing.UIManager;
+import javax.swing.UIManager.LookAndFeelInfo;
+
+/*
+ * UIManger compose 5 famille de fabriquant:
+ * 	1- Metal
+ * 	2- Nimbus
+ * 	3- CDE/Motif
+ * 	4- Windows
+ * 	5- Windows Classic
+ * 
+ * */
+public class KnowUses extends JFrame implements ActionListener{
+	private static final long serialVersionUID = 1L;
+	
+	private LookAndFeelInfo laf[];
+	
+	public KnowUses() {
+		lookAndFeels();
+		userInterface();
+		applyLookAndFeel(laf[2].getClassName());
+	}
+	
+	void lookAndFeels() {
+		laf = UIManager.getInstalledLookAndFeels();
+		for (LookAndFeelInfo look : laf) {
+			System.out.println(look.getName() + " : " + look.getClassName());
+		}
+	}
+	
+	void userInterface() {
+		JPanel p = new JPanel();
+		p.setLayout(new BoxLayout(p, BoxLayout.Y_AXIS));
+		setContentPane(p);
+		
+		JPanel p1 = new JPanel(new FlowLayout(FlowLayout.LEFT));
+		p1.add(new JLabel("Look And Feel : "));
+		p1.add(new JTextField(20));
+		p1.add(new JButton("Appliquer"));
+		
+		p.add(p1);
+		
+		JPanel p2=new JPanel();
+		ButtonGroup group=new ButtonGroup();
+		for (LookAndFeelInfo look : laf) {
+			JRadioButton b=new JRadioButton(look.getName());
+			p2.add(b);
+			group.add(b);
+			b.addActionListener(this);
+			b.setName(look.getClassName());//la classe de LookAndFeild
+		}
+		p.add(p2);
+		
+		
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		pack();
+		setLocationRelativeTo(null);
+		setVisible(true);
+	}
+	
+	void applyLookAndFeel(String className) {
+		try {
+			UIManager.setLookAndFeel(className);
+		}
+		catch (Exception e) {}
+		SwingUtilities.updateComponentTreeUI(this);
+		
+	}
+	
+	public static void main(String[] args) {
+		new KnowUses();
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		JRadioButton b=new (JRadioButton)e.getSource();
+		applyLookAndFeel(b.getName());
+		
+	}
+}

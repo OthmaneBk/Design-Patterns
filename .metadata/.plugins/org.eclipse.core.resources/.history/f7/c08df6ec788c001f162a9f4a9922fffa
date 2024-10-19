@@ -1,0 +1,17 @@
+package com.esisa.dp.creationa.builder;
+
+public class Client {
+	public Client() {
+		application1();
+	}
+	
+	void application1() {
+		/*
+		 * Construction d'une liste de design patterns recherchés par intention
+		 * */
+		
+	}
+	public static void main(String[] args) {
+		
+	}
+}
