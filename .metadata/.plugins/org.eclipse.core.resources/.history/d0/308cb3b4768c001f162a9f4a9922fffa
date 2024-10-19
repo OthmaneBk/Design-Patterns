@@ -1,8 +1,0 @@
-package com.esisa.dp.creationa.builder;
-
-public class ConcreteBuilder1 {
-	/*
-	 * Construire une list de Design Patterns
-	 * avec une recherche par mot clé dans l'intent
-	 * */
-}
