@@ -9,3 +9,9 @@
 
 
 2- The Abstract Factory pattern Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+
+3- Adapter pattern Convert the interface of a class into another interface clients expect. 
+
+![image](https://github.com/user-attachments/assets/592687a5-9a6e-4ad1-8c61-f468509cbef0)
+
+In this example, we want to manage Line and TextShape objects to expose them to the client. Therefore, we need an interface, **Shape**, that represents either a Line or TextShape. **The client (DrawingEditor)** can then draw their own shapes.
