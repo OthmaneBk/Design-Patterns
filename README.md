@@ -16,7 +16,18 @@
 
 In this example, we want to manage Line and TextShape objects to expose them to the client. Therefore, we need an interface, **Shape**, that represents either a Line or TextShape. **The client (DrawingEditor)** can then draw their own shapes.
 
-﻿## The Project
+# The Project
 
- 
-4- The project on design patterns includes Bridge, Builder, Command, Composite, and Proxy. It manages a process for a file source with functionalities such as Load(), Filter(), Select(), and Print(), presented through a Swing interface.
+## Overview
+This project implements various **design patterns**, including:
+- **Bridge**
+- **Builder**
+- **Command**
+- **Composite**
+- **Proxy**
+
+It manages a **file processing system** with the following functionalities:
+- `Load()`: Load files from different sources.
+- `Filter()`: Filter files based on Predicate<File>.
+- `Select()`: Select files by extension.
+- `Print()`: Display files in a **Swing interface** with a JTable (showing file names and sizes).
