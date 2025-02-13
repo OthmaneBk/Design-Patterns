@@ -31,3 +31,9 @@ It manages a **file processing system** with the following functionalities:
 - `Filter()`: Filter files based on Predicate<File>.
 - `Select()`: Select files by extension.
 - `Print()`: Display files in a **Swing interface** with a JTable (showing file names and sizes).
+
+
+<img width="372" alt="image" src="https://github.com/user-attachments/assets/624a25ca-ae2e-4e25-8d7f-8e61542d25be" />
+
+
+<img width="435" alt="image" src="https://github.com/user-attachments/assets/187cd144-28de-428c-90f4-decff1110dba" />
