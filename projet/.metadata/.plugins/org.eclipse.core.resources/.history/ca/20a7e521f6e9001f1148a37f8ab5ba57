@@ -1,0 +1,23 @@
+package projetXML.Exam.command.commands;
+
+import java.util.function.Predicate;
+
+import projetXML.Exam.command.Command;
+import projetXML.Exam.command.Receiver;
+
+
+public class LoadCommand implements Command{
+	private Receiver receiver;
+
+	public LoadCommand(Receiver receiver) {
+		super();
+		this.receiver = receiver;
+	}
+
+
+
+	@Override
+	public void execute() {
+		receiver.load();
+	}
+}

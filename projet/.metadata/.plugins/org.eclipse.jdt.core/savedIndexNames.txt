@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\Othmane\4eme\Java\projet\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3837974375.index
+1132786220.index

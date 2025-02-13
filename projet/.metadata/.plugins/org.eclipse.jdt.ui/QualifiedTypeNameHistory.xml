@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="designPattern.Command.Invoker"/>
+    <fullyQualifiedTypeName name="designPattern.Command.Receiver"/>
+    <fullyQualifiedTypeName name="designPattern.Command.Command"/>
+    <fullyQualifiedTypeName name="designPattern.Builder.RessourceManager"/>
+    <fullyQualifiedTypeName name="designPattern.Proxy.AccessControlProxy"/>
+    <fullyQualifiedTypeName name="designPattern.Proxy.User"/>
+    <fullyQualifiedTypeName name="designPattern.Bridge.ConcreteImplementor"/>
+    <fullyQualifiedTypeName name="designPattern.Command.Commands.LoadCommand"/>
+    <fullyQualifiedTypeName name="designPattern.Command.Commands.FilterCommand"/>
+    <fullyQualifiedTypeName name="designPattern.Command.Commands.SelectCommand"/>
+    <fullyQualifiedTypeName name="designPattern.Command.Commands.PrintCommand"/>
+    <fullyQualifiedTypeName name="designPattern.Command.MacroCommand.MacroCommand"/>
+    <fullyQualifiedTypeName name="designPattern.Builder.ResourceExplorer"/>
+    <fullyQualifiedTypeName name="designPattern.Composite.FolderSource"/>
+    <fullyQualifiedTypeName name="designPattern.Bridge.ImplementorSource"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,21 @@
+package designPattern.Command.Commands;
+
+import designPattern.Command.Command;
+import designPattern.Command.Receiver;
+
+public class PrintCommand implements Command{
+	private Receiver receiver;
+
+	public PrintCommand(Receiver receiver) {
+		super();
+		this.receiver = receiver;
+	}
+
+
+
+	@Override
+	public void execute() {
+		
+		receiver.print();	
+	}
+}

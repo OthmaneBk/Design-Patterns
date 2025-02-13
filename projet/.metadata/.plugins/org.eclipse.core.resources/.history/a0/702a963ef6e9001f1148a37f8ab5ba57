@@ -1,0 +1,24 @@
+package designPattern.Command.Commands;
+
+import java.util.function.Predicate;
+
+import projetXML.Exam.command.Command;
+import projetXML.Exam.command.Receiver;
+
+
+public class PrintCommand implements Command{
+	private Receiver receiver;
+
+	public PrintCommand(Receiver receiver) {
+		super();
+		this.receiver = receiver;
+	}
+
+
+
+	@Override
+	public void execute() {
+		
+		receiver.print();	
+	}
+}

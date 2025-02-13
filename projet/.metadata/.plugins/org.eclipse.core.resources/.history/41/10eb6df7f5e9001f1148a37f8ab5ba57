@@ -1,0 +1,34 @@
+package designPattern.Command;
+
+import java.io.File;
+import java.util.function.Predicate;
+
+
+public class Receiver {
+	
+	private ResourceExplorer resourceExplorer;
+	
+	public Receiver(ResourceExplorer resourceExplorer, Predicate<File> fileCondition, String extension) {
+		super();
+		this.resourceExplorer = resourceExplorer;
+	}
+
+
+	public void load() {
+		resourceExplorer.load();
+	}
+	
+	
+	public void filter(Predicate<File> fileCondition) {
+		resourceExplorer.filter(fileCondition);
+	}
+	
+	public void select(String extension) {
+		resourceExplorer.select(extension);
+	}
+	
+
+	public void print() {
+		resourceExplorer.print();
+	}
+}
