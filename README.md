@@ -15,3 +15,6 @@
 ![image](https://github.com/user-attachments/assets/592687a5-9a6e-4ad1-8c61-f468509cbef0)
 
 In this example, we want to manage Line and TextShape objects to expose them to the client. Therefore, we need an interface, **Shape**, that represents either a Line or TextShape. **The client (DrawingEditor)** can then draw their own shapes.
+
+
+3- The project on design patterns includes Bridge, Builder, Command, Composite, and Proxy. It manages a process for a file source with functionalities such as Load(), Filter(), Select(), and Print(), presented through a Swing interface.
