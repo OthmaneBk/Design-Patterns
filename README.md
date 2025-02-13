@@ -33,6 +33,9 @@ It manages a **file processing system** with the following functionalities:
 - `Print()`: Display files in a **Swing interface** with a JTable (showing file names and sizes).
 
 
+Here’s an example of how to use the Command Pattern to select only files that end with .java
+
+
 <img width="372" alt="image" src="https://github.com/user-attachments/assets/624a25ca-ae2e-4e25-8d7f-8e61542d25be" />
 
 
